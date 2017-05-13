@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="Hello World, World Languages">
+  <meta name="author" content="Asabeneh">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  div{
+ position:relative;
+ width:500px;
+ height:250px;
+ border:1px solid yellow;
+ text-align:center;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translateX(-50%) translateY(-50%);
+ display: flex;
+ align-items: center;
+ padding-left:100px;
+ box-shadow: 5px 5px 250px yellow;
+
+        }
+ #head1{
+          margin:0 auto;
+          text-align: center;
+          font-size: 24px;
+          font-family: Tamhoma;
+          font-weight: 300;
+          font-variant: small-caps;
+          text-shadow: 2px 2px 5px red;
+
+        }
+        #p1{
+          text-align: center;
+          font-variant: inherit;
+        }
+
+
+  </style>
+
+</head>
+<body>
+  <h3 id = "head1"> </h3>
+  <h4 id = "p1"></h4>
+  <h4 id = "time"></h4>
+
+  <div id="firstDiv">
+  </div>
+</body>
+    <script>
+    setInterval(function(){
+
+        var helloWorld =
+        ["Hello Wêreld - (Afrikaans)","Përshendetje Botë - (Albanian)","ሰላም ዓለም - (Amharic)"," مرحبا بالعالم - (Arabic)","բարեւ աշխարհ - (Armenian)","salam Dünya - (Azerbaijan)","Բարեւ աշխարհ - (Armenian)","Kaixo Mundua - (Basque)"," নমস্কার বিশ্ব - (Bengali)","Прывітанне, Свет (Belarusian)","Pozdrav svijete - (Bosnian)","Здравей свят - (Bulgarian)","Hola món - (Catalan)","Hello World - (Cebuano)","Ahoj světe - (Czech)","Moni Dziko Lapansi - (Chichewa)","你好，世界 - (Chinese)","안녕하세요 세계 - (Korean)","Alo Mondyal - (Haitian Creole)","Pozdrav svijete - (Croatian)","Hello World - (Kurdish)","Hej Verden - (Danish)","שלום עולם-(Hebrew)","Saluton mondo - (Esperanto)","Tere, Maailm - (Estonian)","Hello Mundo - (Filipino)","Hei maailma - (Finnish)","Bonjour le monde - (French)","Hallo wrâld - (Frisian)","Hàlo a Shaoghail - (Gaelic Irish)","Ola mundo - (Galician)","Helo Byd - (Welsh)","こんにちは世界 - (Japanese)","Halo Donya - (Javanese)","Γειά σου Κόσμε - (Greek)","હેલો વર્લ્ડ - (Gujarati)","Sannu Duniya - (Hausa)","Hello World - (Hawaiian)","नमस्ते दुनिया - (Hindi)","Nyob zoo lub ntiaj teb no (Hmong)","Ndewo Ụwa - (Igbo)","Halo Dunia - (Indonesian)","Hello World - (English)","Dia Duit - (Irish)","Halló heimur - (Island)","Ciao Mondo - (Italian)","ಹಲೋ ವರ್ಲ್ಡ್ - (Kannada)","Сәлем Әлем - (Kazakh)","សួស្តី​ពិភពលោក - (Khmer)","салам дүйн - (Kyrgyz)","ສະ​ບາຍ​ດີ​ຊາວ​ໂລກ - (Lao)","Salmina Aduna (Fula)","salve Orbis Terrarum - (Latin)","Sveika pasaule - (Latvian)","Labas pasauli - (Lithuanian)","Moien Welt - (Luxembourgish)","Здраво свету - (Macedonian)"," ലോകത്തിനു നമസ്കാരം Malayalam","Hai dunia - (Malay)","Hello World - (Malagasy)","Hello World - (Māori)"," नमस्कार जगा - (Marathi)","сайн уу, дэлхий - (Mongolian)","नमस्कार संसार - (Nepali)","Hei Verden - (Norwegian)","Hallo Wereld - (Dutch)","سلام نړی - (Pashto)","سلام دنیا - (Persian)","Witaj świecie - (Polish)","Olá Mundo - (Portuguese)","ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ ਦੁਨਿਆ - (Punjabi)","Salut lume - (Romanian)","Привет,мир - (Russian)","Talofa Lalolagi - (Samoan)","Здраво Свете - (Serbian)","Lefatše Lumela - (Sotho)","Hello World - (Shona)","سلام ورلڊ - (Sindhi)","හෙලෝ වර්ල්ඩ් - (Sinhalese)","Dobrý deň svet - (Slovak)","Pozdravljen, svet - (Slovene)","Hello World - (Somali)","Hola Mundo - (Spanish)","Halo Dunya - (Sundanese)","Hej världen - (Swedish)","Salamu, Dunia - (Swahili)","Салом Ҷаҳон - (Tajik)","สวัสดีชาวโลก - (Thai)","ஹலோ உலகம் - (Tamil)","Hallo Welt - (German)","హలో వరల్డ్ - (Telugu)","Merhaba Dünya - (Turkish)","Habari Dunia - (Kiswahili)","Привіт Світ - (Ukrainian)","Helló Világ - (Hungarian)","ہیلو دنیا - (Urdu)","Salom Dunyo - (Uzbek)","Chào thế giới - (Vietnamese)","Molo Lizwe - (Xhosa)","העלא וועלט - (Yiddish)","Mo ki O Ile Aiye - (Yoruba)","Sawubona Mhlaba - (Zulu)"];
+
+
+      var fonts = ["Verdana", "Arial", "Helvetica", "sans-serif","cursive","Tahoma","Cambira","Calibri","Georgia","Courier","Monopose","Gill Sans Extrabold","Lucida Console","Times New Roman"];
+
+      var colors= ["AliceBlue","AntiqueWhite","Aqua","Aquamarine","Azure","Beige","Bisque","Black","BlanchedAlmond","Blue","BlueViolet","Brown","BurlyWood","CadetBlue","Chartreuse","Chocolate","Coral","CornflowerBlue","Cornsilk","Crimson","Cyan","DarkBlue","DarkCyan","DarkGoldenRod","DarkGray","DarkGrey","DarkGreen","DarkKhaki","DarkMagenta","DarkOliveGreen","Darkorange","DarkOrchid","DarkRed","DarkSalmon","DarkSeaGreen","DarkSlateBlue","DarkSlateGray","DarkSlateGrey","DarkTurquoise","DarkViolet","DeepPink","DeepSkyBlue","DimGray","DimGrey","DodgerBlue","FireBrick","FloralWhite","ForestGreen","Fuchsia","Gainsboro","GhostWhite","Gold","GoldenRod","Gray","Grey","Green","GreenYellow","HoneyDew","HotPink","IndianRed","Indigo","Ivory","Khaki","Lavender","LavenderBlush","LawnGreen","LemonChiffon","LightBlue","LightCoral","LightCyan","LightGoldenRodYellow","LightGray","LightGrey","LightGreen","LightPink","LightSalmon","LightSeaGreen","LightSkyBlue","LightSlateGray","LightSlateGrey","LightSteelBlue","LightYellow","Lime","LimeGreen","Linen","Magenta","Maroon","MediumAquaMarine","MediumBlue","MediumOrchid","MediumPurple","MediumSeaGreen","MediumSlateBlue","MediumSpringGreen","MediumTurquoise","MediumVioletRed","MidnightBlue","MintCream","MistyRose","Moccasin","NavajoWhite","Navy","OldLace","Olive","OliveDrab","Orange","OrangeRed","Orchid","PaleGoldenRod","PaleGreen","PaleTurquoise","PaleVioletRed","PapayaWhip","PeachPuff","Peru","Pink","Plum","PowderBlue","Purple","Red","RosyBrown","RoyalBlue","SaddleBrown","Salmon","SandyBrown","SeaGreen","SeaShell","Sienna","Silver","SkyBlue","SlateBlue","SlateGray","SlateGrey","Snow","SpringGreen","SteelBlue","Tan","Teal","Thistle","Tomato","Turquoise","Violet","Wheat","White","WhiteSmoke","Yellow","YellowGreen"];
+
+    var bgColor = "";
+    var txtColor = "";
+    var font = "";
+    var bodyBgColor = "";
+
+    var colorsLength = colors.length;
+    var fontLength = fonts.length;
+    var langLength = helloWorld.length;
+
+    console.log( "Colors " + colorsLength + "font types " + fontLength + "number of languages " + langLength);
+    var colorRand = Math.floor((Math.random() * colors.length));
+    var fontRand = Math.floor((Math.random() * fonts.length));
+
+
+
+    bgColor+= colors[colorRand];
+    bodyBgColor+=colors[Math.floor(colorRand * 0.75+ 2)];
+
+    txtColor+=colors[Math.floor(colorRand * 0.8875 + 1)];
+    font +=fonts[fontRand];
+
+
+    var langRand = Math.floor((Math.random() * helloWorld.length));
+    var hello = helloWorld[langRand];
+    var speakers = hello.slice(hello.indexOf('(') + 1, hello.indexOf(')'));
+
+
+
+    document.getElementById("firstDiv").style.background =bgColor;
+    document.body.style.background =bodyBgColor;
+    document.getElementById("firstDiv").style.color =txtColor;
+    document.getElementById("firstDiv").style.fontSize ="48px";
+    document.getElementById("firstDiv").style.fontFamily =font;
+
+    document.getElementById("head1").innerHTML=  speakers + " speakers are greeting the world. ";
+    document.getElementById("p1").innerHTML=  speakers + " speakers like to greet the world with a background color of " + bgColor + " and  text color of " + txtColor +" and font types of " + font ;
+
+
+    document.getElementById("firstDiv").innerHTML = hello;
+
+    var d = new Date();
+    var dd = d.getDate();
+    var dm =d.getMonth() + 1;
+    var dy =d.getFullYear();
+    var h = d.getHours() + ":" + d.getMinutes();
+
+    var time = dd + "-"  + dm + "-"  + dy  + " " + h;
+
+
+    document.getElementById("time").innerHTML = time ;
+
+
+    }, 5000); </script>
+  </body>
+</html>
